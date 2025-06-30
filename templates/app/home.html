@@ -1,0 +1,52 @@
+{% extends 'base/base.html' %}
+{% block content %}
+    <main class="container">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="fade-in">Kitoblar Dunyosiga Xush Kelibsiz!</h1>
+                    <p class="fade-in">Eng sara kitoblar, ajoyib narxlar va tez yetkazib berish</p>
+                    <a href="{% url 'review' %}" class="btn btn-primary">
+                        Kitob sharhlarini ko'rish
+                    </a>
+                </div>
+            </div>
+
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #333;">Ommabop Kitoblar</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-image">📖</div>
+                    <h3>O'tkan Kunlar</h3>
+                    <p>Abdulla Qodiriy</p>
+                    <p style="color: #667eea; font-weight: bold;">45,000 so'm</p>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                        Sotib olish
+                    </button>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-image">📚</div>
+                    <h3>Sharq Masallari</h3>
+                    <p>Xalq og'zaki ijodi</p>
+                    <p style="color: #667eea; font-weight: bold;">38,000 so'm</p>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                        Sotib olish
+                    </button>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-image">📘</div>
+                    <h3>Xamsa</h3>
+                    <p>Alisher Navoiy</p>
+                    <p style="color: #667eea; font-weight: bold;">52,000 so'm</p>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                        Sotib olish
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+{% endblock %}
